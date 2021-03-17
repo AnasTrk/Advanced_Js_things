@@ -1,0 +1,2 @@
+# Advanced_Js_things
+--JUST TRYING SOME ADVANCED TECHNICS ON JS --
