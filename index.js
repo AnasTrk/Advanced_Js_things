@@ -55,9 +55,49 @@ Promise.all([myPromise(),mySecondPromise(),myThirdPromise()]).then((result)=>{
 Promise.race([myPromise(),mySecondPromise(),myThirdPromise()]).then((result)=>{
         console.log(`FINISHED :: ${result}`);
 });
-//OBJECTS
-class Object {
-
+//OBJECTS IN JS
+class Person {
+     name ;
+     lastname;
+     constructor(name,lastname){
+         this.name = name;
+         this.lastname =  lastname;
+     }
 }
+class Student extends Person{
+    constructor(id_student,name,lastname){
+        super(name,lastname);
+        this.id_student = id_student;
+    }
+    get __id_student(){
+        return this.id_student;
+    }
+    set __id_student(id_student){
+        this.id_student = id_student;
+    }
+    get __name_student(){
+        return this.name;
+    }
+    set __name_student(name){
+        this.name = name;
+    }
+    get __lastname_student(){
+        return this.lastname;
+    }
+    set __lastname_student(lastname){
+        this.lastname = lastname;
+    }
+    __show = ()=>{
+        return `
+        --student id :: ${this.id_student} \n 
+        --student name :: ${this.name} \n
+        --student lastname :: ${this.lastname}`
+    }
+}
+let genId = (openPoint,endPoint) =>{
+    return Math.floor(Math.random() * (endPoint - openPoint) + openPoint);
+}
+var student = new Student(genId(1,10),'anas','trak');
+console.log(student.__show());
     //Modules exports
     module.exports = func;  
