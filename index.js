@@ -1,3 +1,4 @@
+
 //arrow functions
 var func = (value) => {
     return ()=>{
@@ -54,3 +55,9 @@ Promise.all([myPromise(),mySecondPromise(),myThirdPromise()]).then((result)=>{
 Promise.race([myPromise(),mySecondPromise(),myThirdPromise()]).then((result)=>{
         console.log(`FINISHED :: ${result}`);
 });
+//OBJECTS
+class Object {
+
+}
+    //Modules exports
+    module.exports = func;  
