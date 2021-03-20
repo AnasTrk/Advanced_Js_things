@@ -1,8 +1,7 @@
 //SOME NODDE JS 
     //MODULES
-    
 //callbacks    
-var value = ()=>{
+/*var value = ()=>{
     return 'wroks like magic';
 }
 function  ano (callback) {
@@ -20,5 +19,6 @@ setInterval((time)=>{
         var date =new Date();
         async(date.getSeconds());
     }, time);
-},time);
+},time);*/
 //ajax HttpRequests
+//FIRE BASE
